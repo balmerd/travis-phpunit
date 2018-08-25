@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit
+<phpunit bootstrap = "vendor/autoload.php"
     backupGlobals               = "false"
     backupStaticAttributes      = "false"
     colors                      = "true"
@@ -13,15 +13,15 @@
 
     <testsuites>
         <testsuite name="Project Test Suite">
-            <directory>tests/phpunit</directory>
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
 
-    <!-- <filter>
+    <filter>
         <whitelist>
-            <directory suffix=".php">src/</directory>
+            <directory suffix=".php">phpunit/</directory>
         </whitelist>
-    </filter> -->
+    </filter>
 
     <php>
         <env name="APP_ENV" value="testing"/>
