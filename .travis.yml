@@ -11,4 +11,4 @@ php:
 pre:
   dd
 
-script: vendor/bin/phpunit --testdox --log-junit ~/logs/junit.xml ./tests/phpunit/*
+script: phpunit --testdox --log-junit ~/logs/junit.xml ./tests/phpunit/*
