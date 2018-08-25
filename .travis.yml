@@ -1,14 +1,11 @@
-# @file
-# .travis.yml - Travis CI Integration for PHPUnit
-
 language: php
-
-sudo: false
-
 php:
-  - 5.4
+  - 7.1
 
-pre:
-  dd
+before_script:
+  # Disable xdebug for speed.
+  - phpenv config-rm xdebug.ini
+  - lscpu
+  - free -m
 
 script: phpunit
