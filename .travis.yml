@@ -8,4 +8,7 @@ sudo: false
 php:
   - 5.4
 
+pre:
+  dd
+
 script: vendor/bin/phpunit --testdox --log-junit ~/logs/junit.xml ./tests/phpunit/*
