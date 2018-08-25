@@ -8,4 +8,4 @@ before_script:
   - lscpu
   - free -m
 
-script: phpunit
+script: phpunit --testdox
