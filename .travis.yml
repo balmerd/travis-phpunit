@@ -1,0 +1,11 @@
+# @file
+# .travis.yml - Travis CI Integration for PHPUnit
+
+language: php
+
+sudo: false
+
+php:
+  - 5.4
+
+script: vendor/bin/phpunit --testdox --log-junit ~/logs/junit.xml ./tests/phpunit/*
